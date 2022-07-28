@@ -25,6 +25,7 @@ nearby_result = requests.request("GET", nearby_url, headers=headers, data=payloa
 geocode_result = gmaps.geocode(l_t)
 reverse_geocode_result = gmaps.reverse_geocode(f"{l_x},{l_y}")
 
+print(nearby_result.text)
 
 # print(reverse_geocode_result)
 # print(geocode_result)
